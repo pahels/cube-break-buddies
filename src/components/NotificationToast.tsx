@@ -112,17 +112,17 @@ export const NotificationToast: React.FC<NotificationToastProps> = ({
               <Button
                 size="sm"
                 onClick={onTakeBreak}
-                className="text-xs h-7 bg-wellness-excellent hover:bg-wellness-excellent/90"
+                className="text-xs h-7 bg-wellness-excellent hover:bg-wellness-excellent/90 text-white"
               >
-                Take Break
+                ✓ Accept Break
               </Button>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={onDismiss}
-                className="text-xs h-7"
+                className="text-xs h-7 border-wellness-poor text-wellness-poor hover:bg-wellness-poor/10"
               >
-                Remind Later
+                ✗ Decline
               </Button>
             </div>
           )}
