@@ -52,6 +52,23 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// CubeConnect wellness colors
+				wellness: {
+					excellent: 'hsl(var(--wellness-excellent))',
+					good: 'hsl(var(--wellness-good))',
+					fair: 'hsl(var(--wellness-fair))',
+					poor: 'hsl(var(--wellness-poor))'
+				},
+				dragon: {
+					happy: 'hsl(var(--dragon-happy))',
+					neutral: 'hsl(var(--dragon-neutral))',
+					sleepy: 'hsl(var(--dragon-sleepy))'
+				},
+				notification: {
+					info: 'hsl(var(--notification-info))',
+					warning: 'hsl(var(--notification-warning))',
+					success: 'hsl(var(--notification-success))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +101,23 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'slide-in-right': {
+					'0%': { transform: 'translateX(100%)', opacity: '0' },
+					'100%': { transform: 'translateX(0)', opacity: '1' }
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(-10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'bounce-gentle': 'bounce 2s infinite',
+				'pulse-glow': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+				'slide-in-right': 'slide-in-right 0.3s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out'
 			}
 		}
 	},

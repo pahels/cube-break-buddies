@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* CubeConnect Dark Mode Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Dark mode background palette */
+    --background: 222 47% 5%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 224 36% 11%;
+    --card-foreground: 213 31% 91%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 224 36% 11%;
+    --popover-foreground: 213 31% 91%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Wellness-themed primary colors */
+    --primary: 217 91% 60%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 215 25% 27%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 215 25% 27%;
+    --muted-foreground: 217 10% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 25% 27%;
+    --input: 215 25% 27%;
+    --ring: 217 91% 60%;
 
-    --radius: 0.5rem;
+    /* Wellness status colors */
+    --wellness-excellent: 142 76% 36%;
+    --wellness-good: 173 58% 39%;
+    --wellness-fair: 45 93% 47%;
+    --wellness-poor: 0 84% 60%;
+
+    /* Dragon states */
+    --dragon-happy: 142 76% 36%;
+    --dragon-neutral: 217 91% 60%;
+    --dragon-sleepy: 45 93% 47%;
+
+    /* Notification types */
+    --notification-info: 217 91% 60%;
+    --notification-warning: 45 93% 47%;
+    --notification-success: 142 76% 36%;
+
+    /* Gradients */
+    --gradient-wellness: linear-gradient(135deg, hsl(217 91% 60%), hsl(142 76% 36%));
+    --gradient-dragon: linear-gradient(135deg, hsl(217 91% 60%), hsl(263 70% 50%));
+    --gradient-card: linear-gradient(145deg, hsl(224 36% 11%), hsl(215 25% 27%));
+    
+    /* Animation and effects */
+    --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
+    --shadow-wellness: 0 4px 20px hsl(142 76% 36% / 0.2);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
