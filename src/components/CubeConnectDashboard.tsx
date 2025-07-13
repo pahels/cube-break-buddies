@@ -88,9 +88,9 @@ const CubeConnectDashboard: React.FC = () => {
             type: userWellness < 40 ? 'drowsiness' : 'distraction',
             title: userWellness < 40 ? '😴 You look sleepy!' : '🤔 Having trouble focusing?',
             message: userWellness < 40 
-              ? `Time for a 5-minute break with ${mockPartners[Math.floor(Math.random() * mockPartners.length)]}?`
-              : `Coffee break with ${mockPartners[Math.floor(Math.random() * mockPartners.length)]}?`,
-            partnerName: mockPartners[Math.floor(Math.random() * mockPartners.length)],
+              ? 'Time for a 5-minute break with teammates?'
+              : 'Coffee break with teammates?',
+            partnerName: undefined,
             location: 'Break Room',
             timestamp: new Date()
           };
